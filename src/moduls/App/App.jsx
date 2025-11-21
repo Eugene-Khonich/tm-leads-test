@@ -1,7 +1,8 @@
 import './App.module.css';
+import Header from '../../moduls/Header/Header';
 
 const App = () => {
-  return <div>App</div>;
+  return <Header />;
 };
 
 export default App;
