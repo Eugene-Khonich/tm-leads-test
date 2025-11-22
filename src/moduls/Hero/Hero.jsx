@@ -11,7 +11,7 @@ const Hero = () => {
           в автоматическом режиме.
         </p>
         <div className={css.inputWrapper}>
-          <input type='text' placeholder='Введите email' />
+          <input type='text' placeholder='ВАШ E-MAIL' />
           <button>начать</button>
         </div>
         <p className={css.free}>5 дней бесплатного пользования</p>

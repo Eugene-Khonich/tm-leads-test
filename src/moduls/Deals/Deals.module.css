@@ -1,34 +1,24 @@
-/* Deals.module.css */
 .deals {
   padding: 40px 20px;
 }
 
 .header {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .swiper {
   width: 100%;
-  overflow: hidden; /* приховуємо непомітні слайди */
+  overflow: hidden;
 }
 
 .swiper .swiper-wrapper {
-  display: flex; /* важливо для Swiper */
+  display: flex;
   align-items: flex-start;
 }
 
 .slide {
-  flex: none; /* ключове для Swiper */
-  width: 299px !important;
-  height: 208px;
-}
-
-.card {
+  flex: 0 0 auto;
   width: 299px;
-  height: 208px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
 }

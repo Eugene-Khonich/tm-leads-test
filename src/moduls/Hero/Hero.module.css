@@ -2,38 +2,42 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
   gap: 40px;
 }
 
 .text {
   flex: 1;
+  width: 343px;
 }
 
 .text h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 126%;
+  letter-spacing: -0.04em;
 }
 
 .text p {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
 }
 
 .inputWrapper {
   display: flex;
-  gap: 10px;
   margin-bottom: 10px;
 }
 
 .inputWrapper input {
   flex: 1;
-  padding: 10px;
   font-size: 1rem;
 }
 
 .inputWrapper button {
-  padding: 10px 20px;
-  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -47,7 +51,7 @@
 }
 
 .imageWrapper img {
-  width: 100%;
+  width: 300px;
   height: auto;
   display: block;
 }
@@ -55,25 +59,49 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
   }
-
+  .free {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--white);
+    opacity: 0.3;
+  }
   .imageWrapper {
     order: -1;
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .text h1 {
-    font-size: 1.5rem;
-  }
-
   .inputWrapper {
-    flex-direction: column;
-  }
-
-  .inputWrapper input,
-  .inputWrapper button {
+    flex-direction: row;
     width: 100%;
+    height: 50px;
+  }
+  .inputWrapper button {
+    background: var(--q);
+    border: none;
+    width: 102px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    color: #030718;
+    font-family: var(--font-family);
+  }
+  .inputWrapper input {
+    background: #201a4f;
+    border: none;
+  }
+  .inputWrapper input::placeholder {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    padding-left: 16px;
+    opacity: 0.34;
   }
 }

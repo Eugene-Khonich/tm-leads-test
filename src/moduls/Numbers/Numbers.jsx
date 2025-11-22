@@ -10,7 +10,7 @@ const Numbers = () => {
 
       <ul className={css.list}>
         <li>
-          Торговой прибыли
+          Торговой <br /> прибыли
           <span>2756%</span>
         </li>
         <li>

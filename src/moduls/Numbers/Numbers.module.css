@@ -1,5 +1,4 @@
 .numbers {
-  padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,30 +21,50 @@
 .list li {
   flex: 1;
   background-color: #f2f2f2;
-  padding: 20px;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
 }
 
 .list li span {
   display: block;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  font-weight: bold;
+  font-size: 35px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
   .numbers {
     flex-direction: column;
     align-items: flex-start;
+    background-color: #f2f2f2;
+    color: black;
+    padding: 16px;
+    margin-top: 20px;
   }
 
   .header {
     order: 0;
     margin-bottom: 10px;
   }
-
+  .header h2 {
+    font-size: 28px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .header p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -0.04em;
+    color: #000;
+    opacity: 0.5;
+  }
   .list {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +74,12 @@
 
   .list li {
     flex: 1 1 calc(50% - 10px);
-    text-align: center;
+    text-align: left;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    color: #000;
+    opacity: 0.8;
   }
 
   .list li:last-child {

@@ -1,0 +1,57 @@
+.card {
+  position: relative;
+  width: 299px;
+  padding: 15px;
+  min-height: 208px;
+  background: url('/src/icons/card-bg.svg') no-repeat center/cover;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.emblem {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 126px;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pair {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.meta {
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.center {
+  margin-top: 15px;
+}
+
+.label {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.profit {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.bottomRow {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.85;
+  font-size: 14px;
+}

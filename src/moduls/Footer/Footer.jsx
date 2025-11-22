@@ -1,9 +1,12 @@
+import css from './Footer.module.css';
+import frame from '../../icons/frame.svg';
+
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <p>Быстрая навигация</p>
-        <ul>
+    <footer className={css.footerWrapper}>
+      <div className={css.block}>
+        <p className={css.header}>Быстрая навигация</p>
+        <ul className={css.links}>
           <li>Цифры</li>
           <li>Сделки онлайн</li>
           <li>о компании</li>
@@ -12,11 +15,12 @@ const Footer = () => {
           <li>FAQ</li>
         </ul>
       </div>
-      <div>
-        {/* <img src='src/icons/frame.svg' alt='' /> */}
-        <p>© 2022 TradeBlade. All rights reserved</p>
+
+      <div className={css.block}>
+        <img src={frame} alt='logo' className={css.logo} />
+        <p className={css.copy}>© 2022 TradeBlade. All rights reserved</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
