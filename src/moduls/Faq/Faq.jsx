@@ -26,13 +26,16 @@ const Faq = () => {
 
   return (
     <div className={css.faqWrapper}>
-      <h2>Часто задаваемые вопросы</h2>
+      <h3>Часто задаваемые вопросы</h3>
       <ul className={css.list}>
         {items.map((item, index) => (
-          <li key={index} className={css.item}>
-            <h3 onClick={() => toggle(index)} className={css.question}>
+          <li
+            key={index}
+            className={`${css.item} ${openIndex === index ? css.openItem : ''}`}
+          >
+            <h4 onClick={() => toggle(index)} className={css.question}>
               {item.question}
-            </h3>
+            </h4>
             <p
               className={`${css.answer} ${openIndex === index ? css.open : ''}`}
             >

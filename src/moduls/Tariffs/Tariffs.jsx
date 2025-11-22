@@ -12,7 +12,7 @@ const Tariffs = () => {
       <ul className={css.card}>
         <li>
           <h3>STANDART</h3>
-          <p>
+          <p className={css.text}>
             ✓ Ручной трейдинг
             <br />
             ✓ Автоматическое или полуавтоматическое копирование сделок
@@ -23,16 +23,23 @@ const Tariffs = () => {
             <br />
           </p>
           <div className={css.price}>
-            <p>$234 -35%</p>
-            <input type='text' />
+            <p>
+              $234 <span>-35%</span>
+            </p>
+            <select className={css.select}>
+              <option value='12'>12 месяцев</option>
+              <option value='6'>6 месяцев</option>
+              <option value='1'>1 месяц</option>
+            </select>
           </div>
           <button className={css.btnTry}>
-            Попробовать <br />5 дней бесплатно
+            Попробовать <br />
+            <span>5 дней бесплатно</span>
           </button>
         </li>
         <li>
           <h3>VIP</h3>
-          <p>
+          <p className={css.text}>
             ✓ Ручной трейдинг
             <br />
             ✓ Автоматическое или полуавтоматическое копирование сделок
@@ -45,11 +52,18 @@ const Tariffs = () => {
             <br />
           </p>
           <div className={css.price}>
-            <p>$585 -35%</p>
-            <input type='text' />
+            <p>
+              $585 <span>-35%</span>
+            </p>
+            <select className={css.select}>
+              <option value='12'>12 месяцев</option>
+              <option value='6'>6 месяцев</option>
+              <option value='1'>1 месяц</option>
+            </select>
           </div>
           <button className={css.btnTry}>
-            Попробовать <br />5 дней бесплатно
+            Попробовать <br />
+            <span>5 дней бесплатно</span>
           </button>
         </li>
       </ul>

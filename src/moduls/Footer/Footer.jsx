@@ -16,7 +16,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className={css.block}>
+      <div className={css.blockLogo}>
         <img src={frame} alt='logo' className={css.logo} />
         <p className={css.copy}>© 2022 TradeBlade. All rights reserved</p>
       </div>
