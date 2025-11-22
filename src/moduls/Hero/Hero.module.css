@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.inputWrapper input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.inputWrapper button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.free {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.imageWrapper {
+  flex: 1;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageWrapper {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .inputWrapper {
+    flex-direction: column;
+  }
+
+  .inputWrapper input,
+  .inputWrapper button {
+    width: 100%;
+  }
+}
