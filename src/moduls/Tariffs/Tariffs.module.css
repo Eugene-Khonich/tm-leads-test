@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 16px;
-  padding-bottom: 50px;
+  padding: 150px 16px 50px;
 }
 .tariffsWrapper h2 {
   font-weight: 700;
@@ -107,6 +106,7 @@
     background: var(--purple);
   }
 }
+
 .btnTry {
   display: block;
   padding: 16px 24px;
@@ -144,5 +144,15 @@
   .card {
     flex-direction: row;
     gap: 20px;
+  }
+
+  .tariffsWrapper {
+    display: flex;
+    padding: 95px 297px;
+  }
+
+  .buttons {
+    padding: 40px 0;
+    max-width: 413px;
   }
 }
