@@ -37,7 +37,6 @@
   flex-direction: column;
   gap: 32px;
   width: 205px;
-  padding-left: 16px;
 }
 .links li {
   text-transform: uppercase;
@@ -56,6 +55,7 @@
   color: black;
   background-color: #57e1ff;
   border: none;
+  border-radius: 3px;
   &:focus,
   &:hover {
     background-color: rgba(87, 225, 255, 0.2);

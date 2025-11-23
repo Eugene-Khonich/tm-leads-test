@@ -4,7 +4,7 @@ const Numbers = () => {
   return (
     <section className={css.numbers}>
       <div className={css.header}>
-        <h2>Цифры</h2>
+        <h2 className={css.title}>Цифры</h2>
         <p>Сентябрь 2022</p>
       </div>
 

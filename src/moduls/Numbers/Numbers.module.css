@@ -5,13 +5,21 @@
   gap: 20px;
 }
 
-.header {
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #030718;
+  position: relative;
+  width: 292px;
+  height: 82px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 200px;
+  align-items: flex-end;
+  padding-left: 16px;
+  background: url('/src/icons/about.svg') no-repeat left bottom;
+  z-index: 3;
+  margin-top: -24px;
 }
-
 .list {
   display: flex;
   gap: 20px;
@@ -20,7 +28,6 @@
 
 .list li {
   flex: 1;
-  background-color: #f2f2f2;
   border-radius: 10px;
   text-align: left;
   font-size: 1rem;
@@ -40,22 +47,14 @@
   .numbers {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f2f2f2;
     color: black;
-    padding: 16px;
     margin-top: 20px;
+    background: var(--white);
   }
 
   .header {
     order: 0;
     margin-bottom: 10px;
-  }
-  .header h2 {
-    font-size: 28px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    color: #000;
   }
   .header p {
     font-weight: 400;
@@ -64,12 +63,14 @@
     letter-spacing: -0.04em;
     color: #000;
     opacity: 0.5;
+    padding-left: 16px;
   }
   .list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
+    padding-left: 16px;
   }
 
   .list li {
