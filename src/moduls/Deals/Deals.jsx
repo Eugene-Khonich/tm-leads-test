@@ -5,13 +5,17 @@ import 'swiper/css/scrollbar';
 import css from './Deals.module.css';
 import CardDeal from '../CardDeal/CardDeal';
 import cards from '../../dealsData';
+import point from '../../icons/point.svg';
 
 const Deals = () => {
   return (
-    <section className={css.deals}>
+    <section className={css.deals} id='deals'>
       <div className={css.header}>
         <h2>Прошедшие сделки</h2>
-        <p>Онлайн</p>
+        <p>
+          <img src={point} alt='point' />
+          Онлайн
+        </p>
       </div>
 
       <Swiper
@@ -19,6 +23,7 @@ const Deals = () => {
         spaceBetween={20}
         slidesPerView='auto'
         scrollbar={{ draggable: true }}
+        loop={true}
         className={css.swiper}
         breakpoints={{
           375: { slidesPerView: 1 },

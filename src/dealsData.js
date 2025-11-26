@@ -31,6 +31,38 @@ const cards = [
     target: 4,
     date: '06.10.2022',
   },
+  {
+    pair: 'NEAR/USDT',
+    type: 'SPOT',
+    time: '1 мин. назад',
+    profit: '58.6206',
+    target: 4,
+    date: '06.10.2022',
+  },
+  {
+    pair: 'BTC/USDT',
+    type: 'SPOT',
+    time: '1 мин. назад',
+    profit: '6.02',
+    target: 3,
+    date: '06.10.2022',
+  },
+  {
+    pair: 'ETH/USDT',
+    type: 'SPOT',
+    time: '1 мин. назад',
+    profit: '16.3',
+    target: 4,
+    date: '06.10.2022',
+  },
+  {
+    pair: 'NEAR/USDT',
+    type: 'SPOT',
+    time: '1 мин. назад',
+    profit: '0.963',
+    target: 4,
+    date: '06.10.2022',
+  },
 ];
 
 export default cards;

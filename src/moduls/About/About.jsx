@@ -1,9 +1,15 @@
 import css from './About.module.css';
+import mobileLine from '../../icons/about.svg';
+import desktopLine from '../../icons/aboutDesck.svg';
 
 const About = () => {
   return (
-    <div className={css.about}>
+    <div className={css.about} id='about'>
       <div className={css.aboutText}>
+        <picture>
+          <source media='(min-width: 768px)' srcSet={desktopLine} />
+          <img src={mobileLine} alt='line' className={css.line} />
+        </picture>
         <h2 className={css.title}>О компании</h2>
         <p className={css.text}>
           Мы опытная команда, для которой трейдинг – профессия. TradeBlade

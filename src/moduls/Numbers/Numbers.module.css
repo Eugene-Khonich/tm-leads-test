@@ -1,8 +1,18 @@
 .numbers {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
+  padding-bottom: 50px;
+  background: var(--white);
+  padding-left: 16px;
+}
+
+.line {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 300px;
+  z-index: 0;
 }
 
 .title {
@@ -11,26 +21,24 @@
   text-transform: uppercase;
   color: #030718;
   position: relative;
-  width: 292px;
-  height: 82px;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 16px;
-  background: url('/src/icons/about.svg') no-repeat left bottom;
-  z-index: 3;
-  margin-top: -24px;
-}
-.list {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+  z-index: 1;
+  margin-top: 30px;
 }
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .list li {
-  flex: 1;
-  border-radius: 10px;
+  flex: 1 1 calc(50% - 10px);
   text-align: left;
-  font-size: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.8;
 }
 
 .list li span {
@@ -42,49 +50,51 @@
   color: var(--purple);
   font-weight: 500;
 }
+.header {
+  margin-bottom: 30px;
+}
+.header p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  color: #000;
+  opacity: 0.5;
+}
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
+  .line {
+    width: 639px;
+    top: -40px;
+  }
+  .title {
+    font-size: 44px;
+    margin-right: 150px;
+  }
   .numbers {
-    flex-direction: column;
-    align-items: flex-start;
-    color: black;
-    margin-top: 20px;
-    background: var(--white);
-  }
-
-  .header {
-    order: 0;
-    margin-bottom: 10px;
-  }
-  .header p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: -0.04em;
-    color: #000;
-    opacity: 0.5;
-    padding-left: 16px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 65px 170px 60px 0;
   }
   .list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-    padding-left: 16px;
+    flex-wrap: nowrap;
+    gap: 100px;
+    padding-left: 0;
+    align-items: center;
+    justify-content: space-around;
   }
-
+  .header {
+    flex: 1;
+    padding-left: 80px;
+  }
   .list li {
-    flex: 1 1 calc(50% - 10px);
+    flex: 1 1 auto;
     text-align: left;
-    font-size: 14px;
-    line-height: 143%;
-    text-transform: uppercase;
-    color: #000;
-    opacity: 0.8;
   }
-
-  .list li:last-child {
-    flex: 50% 0 0;
-    margin-right: auto;
+  .list li span {
+    font-size: 60px;
   }
 }

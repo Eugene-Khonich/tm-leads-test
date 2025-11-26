@@ -14,12 +14,14 @@ const CardDeal = ({ pair, type, time, profit, target, date }) => {
 
       <div className={css.center}>
         <p className={css.label}>Прибыль</p>
-        <p className={css.profit}>{profit}%</p>
+        <p className={css.profit}>
+          {profit}% <span className={css.arrow}>↑</span>
+        </p>
       </div>
 
       <div className={css.bottomRow}>
-        <p>Цель {target}</p>
-        <p>Дата входа {date}</p>
+        <p className={css.target}>Цель {target}</p>
+        <p className={css.date}>Дата входа {date}</p>
       </div>
     </div>
   );

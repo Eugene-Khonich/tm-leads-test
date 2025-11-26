@@ -26,7 +26,7 @@
   flex: 1;
   padding: 10px 0;
   background: var(--q);
-  border: none;
+  border: 1px solid;
   border-radius: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -35,15 +35,11 @@
   text-transform: uppercase;
   color: #000;
   &:hover {
-    background: var(--purple);
-    opacity: 0.4;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 133%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
+    background: rgba(87, 225, 255, 0.2);
     color: var(--q);
-    opacity: 0.8;
+    box-shadow: 0 0 4px 0 var(--q);
+    border: 1px solid var(--q);
+    border-radius: 3px;
   }
 }
 
@@ -122,6 +118,12 @@
   text-transform: uppercase;
   color: #030718;
   box-shadow: 0 0 4px 0 var(--q);
+  &:hover {
+    background: rgba(87, 225, 255, 0.2);
+    color: var(--q);
+    box-shadow: 0 0 4px 0 var(--q);
+    border-radius: 3px;
+  }
 }
 .btnTry span {
   font-weight: 400;

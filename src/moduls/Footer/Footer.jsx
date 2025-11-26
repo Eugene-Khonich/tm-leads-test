@@ -7,12 +7,23 @@ const Footer = () => {
       <div className={css.block}>
         <p className={css.header}>Быстрая навигация</p>
         <ul className={css.links}>
-          <li>Цифры</li>
-          <li>Сделки онлайн</li>
-          <li>о компании</li>
-          <li>tradeblad это</li>
-          <li>тарифы</li>
-          <li>FAQ</li>
+          <li>
+            <a href='#numbers'>Цифры</a>
+          </li>
+          <li>
+            <a href='#deals'>Сделки онлайн</a>
+          </li>
+          <li>
+            <a href='#about'>О компании</a>
+          </li>
+          <li>Как начать</li>
+          <li>
+            <a href='#tariffs'>Тарифы</a>
+          </li>
+          <li>Отзывы</li>
+          <li>
+            <a href='@faq'>FAQ</a>
+          </li>
         </ul>
       </div>
 

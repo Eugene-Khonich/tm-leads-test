@@ -13,13 +13,23 @@ const Header = () => {
 
       <nav className={css.nav}>
         <ul className={css.links}>
-          <li>Цифры</li>
-          <li>Сделки онлайн</li>
-          <li>О компании</li>
+          <li>
+            <a href='#numbers'>Цифры</a>
+          </li>
+          <li>
+            <a href='#deals'>Сделки онлайн</a>
+          </li>
+          <li>
+            <a href='#about'>О компании</a>
+          </li>
           <li>Как начать</li>
-          <li>Тарифы</li>
+          <li>
+            <a href='#tariffs'>Тарифы</a>
+          </li>
           <li>Отзывы</li>
-          <li>FAQ</li>
+          <li>
+            <a href='@faq'>FAQ</a>
+          </li>
         </ul>
         <div className={css.auth}>
           <button>Вход</button>
@@ -31,7 +41,6 @@ const Header = () => {
         <img src={BurgerIcon} alt='menu' />
       </button>
 
-      {/* Мобільне меню */}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </header>
   );

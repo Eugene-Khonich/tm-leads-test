@@ -25,7 +25,7 @@ const Faq = () => {
   };
 
   return (
-    <div className={css.faqWrapper}>
+    <div className={css.faqWrapper} id='faq'>
       <h3>Часто задаваемые вопросы</h3>
       <ul className={css.list}>
         {items.map((item, index) => (

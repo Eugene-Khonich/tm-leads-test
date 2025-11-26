@@ -2,7 +2,7 @@ import css from './Tariffs.module.css';
 
 const Tariffs = () => {
   return (
-    <div className={css.tariffsWrapper}>
+    <div className={css.tariffsWrapper} id='tariffs'>
       <h2>Tарифы</h2>
       <ul className={css.buttons}>
         <button className={css.btn}>спот</button>
